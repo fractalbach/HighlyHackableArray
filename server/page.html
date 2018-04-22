@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Highly Hackable Array</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+<h1>The Highly Hackable Array</h1>
+
+<h2>Welcome!</h2>
+  <p>
+  This is the Highly Hackable Array.  
+  It is an arbitrary array of bytes that you can change!  
+  Check out the array in different forms! Try going to 
+  <a href="/base64">/base64</a> or 
+  <a href="/ints">/ints</a>.
+  In the mean time, just enjoy the plain string below!
+  </p>
+
+<h2>Highly Hackable String</h2>
+  <pre style="white-space: pre-wrap; border: solid 1px">
+  {{.hackstring}}
+  </pre>
+
+
+<h2>Editing The Array</h2>
+  <form action="/save/" method="POST">
+    <h3>Starting Position:</h3>
+      <div><input type="text" name="addr" rows="1" cols="8"></input></div>
+    <h3>Input Data:</h3>
+      <div><textarea name="body" rows="20" cols="80">Hack me!</textarea></div>
+      <div><input type="submit" value="Save"></div>
+  </form>
+
+
+</body>
+</html>
